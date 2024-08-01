@@ -1,0 +1,23 @@
+
+
+.custom-background{
+    height: 200vh;
+    width: 100%;
+    background-image: url("./assets/backgroundImage.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.h-10 {
+    height: 10vh;
+}
+
+.h-90 {
+    height: 90vh;
+}
+
+.pt-10{
+    padding-top: 10vh;
+}
+
+

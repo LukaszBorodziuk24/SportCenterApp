@@ -1,0 +1,18 @@
+.textCustom{
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translateZ(-10px) scaleX(0.85);
+    transform-origin: left center;
+    font-family: Bahnschrift, serif;
+    color: white;
+    font-size: 600%;
+
+}
+
+.buttonCustom{
+    height: 66px;
+    width: 214px;
+    border-radius: 20px;
+    background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+
+}
