@@ -1,0 +1,14 @@
+.left-pentagon {
+    flex: 1; /* Zajmuje połowę szerokości kontenera */
+    background-color: #333;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.left-pentagon:hover {
+    background-color: #f39c12;
+}

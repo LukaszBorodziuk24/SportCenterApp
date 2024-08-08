@@ -20,4 +20,26 @@
     padding-top: 10vh;
 }
 
+.pt-20{
+    padding-top: 20vh;
+}
+
+.mg-10{
+    margin-top: 10vh;
+}
+
+.buttonGradient{
+    background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+}
+
+.buttonGradient:hover{
+    background: radial-gradient(50% 50% at 50% 50%, #8f71a9 0%, #52049b 100%);
+}
+
+.buttonGradient:active{
+    background: radial-gradient(50% 50% at 50% 50%, #52049b 0%, #8f71a9 100%);
+
+}
+
+
 

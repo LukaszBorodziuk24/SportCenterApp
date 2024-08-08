@@ -19,7 +19,7 @@ const NavbarComp = ()=>{
                     <Nav.Link className="navButtons" href="#contact">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto">
-                    <Button id="logInButton">Log in</Button>
+                    <Button id="logInButton" className={"buttonGradient"}>Log in</Button>
                 </Nav>
 
             </Navbar.Collapse>

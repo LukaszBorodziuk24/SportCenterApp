@@ -13,6 +13,6 @@
     height: 66px;
     width: 214px;
     border-radius: 20px;
-    background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+    border: none;
 
 }

@@ -7,8 +7,7 @@
 
     font-size: 20px;
     font-weight: bold;
-
-    background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+    border: none;
     border-radius: 20px;
 
     display: flex;

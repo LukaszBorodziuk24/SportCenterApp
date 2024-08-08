@@ -9,7 +9,7 @@ const MainContent = () => {
 
 
     return(
-        <div className="h-90 d-flex pt-10">
+        <div className="h-90 d-flex mg-10">
             <StartInfo/>
             <Tiles/>
         </div>
