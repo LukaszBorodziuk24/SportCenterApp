@@ -1,12 +1,16 @@
 
 
-.custom-background{
+.customBackground{
     height: 200vh;
     width: 100%;
     background-image: url("./assets/backgroundImage.svg");
     background-size: cover;
     background-repeat: no-repeat;
+
+
 }
+
+
 
 .h-10 {
     height: 10vh;
@@ -32,14 +36,23 @@
     background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
 }
 
+/*.buttonGradient:hover{*/
+/*    background: radial-gradient(50% 50% at 50% 50%, #8f71a9 0%, #52049b 100%);*/
+/*}*/
+
+/*.buttonGradient:active{*/
+/*    background: radial-gradient(50% 50% at 50% 50%, #52049b 0%, #8f71a9 100%);*/
+
+/*}*/
+
+
+
 .buttonGradient:hover{
-    background: radial-gradient(50% 50% at 50% 50%, #8f71a9 0%, #52049b 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #20B4D4 0%, #28819D 100%);
 }
 
 .buttonGradient:active{
-    background: radial-gradient(50% 50% at 50% 50%, #52049b 0%, #8f71a9 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #28819D 0%, #20B4D4 100%);
 
 }
-
-
 

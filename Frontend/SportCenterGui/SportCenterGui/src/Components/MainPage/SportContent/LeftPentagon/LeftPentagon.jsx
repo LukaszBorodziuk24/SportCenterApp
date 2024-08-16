@@ -1,15 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {animated, useSpring} from '@react-spring/web';
 import './LeftPentagon.css';
+import {useNavigate} from "react-router-dom";
 
-const LeftPentagon = ({ onHover, isHovered }) => {
+const LeftPentagon = ({isHovered, onMouseEnter, onMouseLeave, onNavigate}) => {
+
+
+    const props = useSpring({
+        backgroundSize: isHovered ? '110%' : '100%',
+        config: {tension: 280, friction: 60},
+    });
+
+
     return (
-        <div
-            className={`left-pentagon ${isHovered ? 'hovered' : ''}`}
-            onMouseEnter={() => onHover('left')}
-            onMouseLeave={() => onHover(null)}
+        <animated.div
+            style={props}
+            onMouseEnter={onMouseEnter} // Ustaw hover na true
+            onMouseLeave={onMouseLeave} // Ustaw hover na false
+            onClick={onNavigate}
+            className="left-pentagon"
+
         >
-            KICKBOXING
-        </div>
+            <p className={"textCustom textSize"}>KICKBOXING</p>
+        </animated.div>
     );
 }
 

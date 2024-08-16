@@ -2,8 +2,15 @@
 
 import "./NavbarComp.css"
 import {Navbar, Nav, Button} from 'react-bootstrap';
+import {useNavigate} from "react-router-dom";
 
 const NavbarComp = ()=>{
+
+    const navigate = useNavigate();
+
+    const handleNavigation = (path) => {
+        navigate(path);
+    }
 
     return(
         <Navbar className="h-10 fixed-top" bg="transparent" variant="dark" expand="lg">
@@ -11,15 +18,16 @@ const NavbarComp = ()=>{
             <Navbar.Brand id="logo" href="#home">LOGO</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                    <Nav.Link className="navButtons" href="#home">Home</Nav.Link>
-                    <Nav.Link className="navButtons" href="#ticket">Ticket</Nav.Link>
+                <Nav className="ml-auto">
+                    <Nav.Link className="navButtons" onClick={ () => handleNavigation("/")}>Home</Nav.Link>
+                    <Nav.Link className="navButtons" onClick={ () => handleNavigation("/login")}>Ticket</Nav.Link>
                     <Nav.Link className="navButtons" href="#trainer">Trainer</Nav.Link>
                     <Nav.Link className="navButtons" href="#diet">Diet</Nav.Link>
                     <Nav.Link className="navButtons" href="#contact">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto">
-                    <Button id="logInButton" className={"buttonGradient"}>Log in</Button>
+                    <Button id="logInButton" className={"buttonGradient"}
+                            onClick={ () => handleNavigation("/login")}>Log in</Button>
                 </Nav>
 
             </Navbar.Collapse>

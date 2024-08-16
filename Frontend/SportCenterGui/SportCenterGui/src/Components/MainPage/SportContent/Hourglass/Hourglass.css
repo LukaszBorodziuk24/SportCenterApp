@@ -3,22 +3,21 @@
 
 .hourglass {
     position: absolute;
-    left: 50%; /* Pozycjonowanie na środku */
-    transform: translateX(-50%); /* Centrowanie */
-    width: 55vw; /* Stała szerokość klepsydry */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55vw;
     height: 90vh;
     clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
-    background-color: #555;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2; /* Wyższy indeks dla nachodzenia */
-    transition: background-color 0.3s ease;
+    z-index: 2;
     overflow: hidden;
-}
-
-.hourglass.hovered {
-    background-color: #f39c12;
+    background-image: url("../../../../assets/gymMainBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    cursor: pointer;
 }
 

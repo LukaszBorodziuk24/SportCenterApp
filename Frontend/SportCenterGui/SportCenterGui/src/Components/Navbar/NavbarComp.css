@@ -1,5 +1,5 @@
 .navbar {
-
+    /*margin-left: 5%;*/
 }
 #logInButton{
     width: 157px;
@@ -17,12 +17,9 @@
 
 }
 
-#logInButtonSection{
-
-}
 
 .navButtons{
-    margin-left: 20%;
+    margin-left: 5vw;
     --bs-nav-link-font-size: 20px;
 }
 

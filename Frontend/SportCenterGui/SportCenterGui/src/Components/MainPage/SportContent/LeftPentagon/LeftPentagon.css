@@ -1,14 +1,12 @@
 .left-pentagon {
-    flex: 1; /* Zajmuje połowę szerokości kontenera */
-    background-color: #333;
+    flex: 1;
     height: 100%;
-    color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    transition: background-color 0.3s ease;
-}
-
-.left-pentagon:hover {
-    background-color: #f39c12;
+    background-image: url("../../../../assets/boxMainBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    cursor: pointer;
 }

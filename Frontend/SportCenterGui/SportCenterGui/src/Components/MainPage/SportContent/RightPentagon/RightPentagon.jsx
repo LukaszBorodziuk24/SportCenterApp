@@ -1,15 +1,29 @@
 import React from 'react';
 import './RightPentagon.css';
+import {animated, useSpring} from "@react-spring/web";
+import {useNavigate} from "react-router-dom";
 
-const RightPentagon = ({ onHover, isHovered }) => {
+const RightPentagon = ({isHovered, onMouseEnter, onMouseLeave, onNavigate}) => {
+
+    const props = useSpring({
+        backgroundSize: isHovered ? '110%' : '100%',
+        config: {tension: 280, friction: 60},
+    });
+
     return (
-        <div
-            className={`right-pentagon ${isHovered ? 'hovered' : ''}`}
-            onMouseEnter={() => onHover('right')}
-            onMouseLeave={() => onHover(null)}
+        <animated.div
+            className="right-pentagon"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            onClick={onNavigate}
+            style={props}
+
         >
-            CROSSFIT
-        </div>
+            <p className={"textCustom textSize"}>
+                CROSSFIT
+            </p>
+
+        </animated.div>
     );
 }
 

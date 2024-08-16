@@ -1,9 +1,9 @@
 import {Button, Image} from "react-bootstrap";
 import arrowDown from '@assets/arrow.svg';
 import "./StartInfo.css"
+import {useState} from "react";
 
 const StartInfo = () =>{
-
 
     const scrollToBottom = () => {
         window.scrollTo({
@@ -28,5 +28,7 @@ const StartInfo = () =>{
         </div>
     )
 }
+
+
 
 export default StartInfo

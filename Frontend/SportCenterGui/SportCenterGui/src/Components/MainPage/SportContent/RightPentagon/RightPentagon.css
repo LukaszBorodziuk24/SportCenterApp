@@ -1,14 +1,21 @@
 .right-pentagon {
-    flex: 1; /* Zajmuje połowę szerokości kontenera */
-
-    background-color: #333;
-    color: white;
+    flex: 1;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
     transition: background-color 0.3s ease;
+    background-image: url("../../../../assets/crossfitMainBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    cursor: pointer;
 }
 
-.right-pentagon:hover {
-    background-color: #f39c12;
+.textSize{
+    font-size: 270%;
+    font-weight: bold;
+    text-transform: none;
+    padding-left: 15%;
+    padding-right: 10%;
 }

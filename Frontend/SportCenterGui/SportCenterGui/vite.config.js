@@ -8,5 +8,8 @@ export default defineConfig({
     alias:{
       '@assets':'/src/assets'
     }
+  },
+  optimizeDeps:{
+    exclude: ['@react-spring']
   }
 })
