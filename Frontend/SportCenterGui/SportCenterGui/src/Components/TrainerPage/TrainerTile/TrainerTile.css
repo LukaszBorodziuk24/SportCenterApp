@@ -1,0 +1,53 @@
+
+
+
+.trainerTile{
+    height: 70vh;
+    width: 70vw;
+
+    color: white;
+}
+
+.boxShadow{
+    box-shadow: 0 0 90px 0 rgba(26, 187, 177, 0.20);
+}
+
+.heartIcon{
+    background-color: #1ABBB1;
+    border-radius: 4px;
+    scale: 200%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .trainerTile{
+
+        height: 40vh;
+        width: 40vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .trainerTile{
+        height: 40vh;
+        width: 30vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .trainerTile{
+        height: 40vh;
+        width: 30vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .trainerTile{
+        height: 45vh;
+        width: 22vw;
+    }
+}
+
+
+

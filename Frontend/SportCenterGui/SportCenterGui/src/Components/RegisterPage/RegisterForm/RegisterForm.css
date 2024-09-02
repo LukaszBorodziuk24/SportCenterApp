@@ -1,0 +1,43 @@
+.login-form{
+    /*border-radius: 100%;*/
+}
+
+.logo{
+    font-size: 200%;
+    color: white;
+    
+}
+
+.loginGoogle{
+    background: none;
+    border-color: #1ABBB1;
+}
+
+.loginGoogle:hover{
+    background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+    border-color: #168881;
+
+}
+
+.transparentButton{
+    background: none;
+    border: none;
+    /*font-size: 100%;*/
+}
+
+.transparentButton:hover{
+    color: #fafff4;
+}
+
+
+
+
+
+.iconEye{
+    color: #88AAA8;
+    cursor: pointer;
+    /*border-left: none;*/
+
+    /*background: transparent;*/
+    /*border: none;*/
+}

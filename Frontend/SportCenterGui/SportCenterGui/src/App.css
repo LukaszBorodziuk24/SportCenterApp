@@ -1,17 +1,4 @@
 
-
-.customBackground{
-    height: 200vh;
-    width: 100%;
-    background-image: url("./assets/backgroundImage.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-}
-
-
-
 .h-10 {
     height: 10vh;
 }
@@ -32,8 +19,16 @@
     margin-top: 10vh;
 }
 
+.mb-5{
+    margin-bottom: 5vh;
+}
+
 .buttonGradient{
     background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+}
+
+.greyFont{
+    color: #88AAA8;
 }
 
 /*.buttonGradient:hover{*/

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Tiles.css';
-import Tile from "../Tile/Tile.jsx";
+import Tile from "./Tile/Tile.jsx";
 import {Container} from "react-bootstrap";
 
 const tileData = [
@@ -28,7 +28,7 @@ const tileData = [
 
 const Tiles = () => {
     return (
-        <div className="tiles-container col-6">
+        <div className="tiles-container col-7">
             {tileData.map((tile, index) => (
                 <Tile key={index} size={tile.size} position={tile.position}>
                     {tile.content}

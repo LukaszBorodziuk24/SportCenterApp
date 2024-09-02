@@ -4,7 +4,6 @@
     transform-origin: left center;
     font-family: Bahnschrift, serif;
     color: white;
-
     font-size: 600%;
     transform: translateZ(-10px) scaleX(0.85);
 
@@ -15,5 +14,8 @@
     width: 214px;
     border-radius: 20px;
     border: none;
+}
 
+.arrowStyle{
+    scale: 200%;
 }

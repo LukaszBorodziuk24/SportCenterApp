@@ -1,9 +1,7 @@
-/*.customBackground{*/
-/*    height: 200vh;*/
-/*    width: 100%;*/
-/*    background-image: url("C:/Users/pwdlp/SportCenterApp/Frontend/SportCenterGui/SportCenterGui/src/assets/backgroundImage.svg");*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-
-
-/*}*/
+.customBackground{
+    height: 200vh;
+    /*width: auto;*/
+    background-image: url("../../assets/backgroundImage.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

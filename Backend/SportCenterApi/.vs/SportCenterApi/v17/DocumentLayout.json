@@ -3,24 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\models\\sporttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:models\\sporttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\sportcenterapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:sportcenterapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\sportcenterdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:sportcenterdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\middleware\\blockendpointmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:middleware\\blockendpointmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\filters\\hideendpointsdocumentfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:filters\\hideendpointsdocumentfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\sportcenterapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:sportcenterapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\migrations\\20240826005750_added nullable to lastname and sporttype properties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:migrations\\20240826005750_added nullable to lastname and sporttype properties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826005647_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240826005647_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\migrations\\20240821222451_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:migrations\\20240821222451_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\migrations\\20240826005142_added nullable to lastname and sporttype fields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:migrations\\20240826005142_added nullable to lastname and sporttype fields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\migrations\\20240821224319_added lastname to appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:migrations\\20240821224319_added lastname to appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240821214626_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240821214626_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|c:\\users\\pwdlp\\sportcenterapp\\backend\\sportcenterapi\\migrations\\20240826190339_add name prop to appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCDB64F-8E6E-42A7-9BDE-CB35CC1E5DD9}|SportCenterApi.csproj|solutionrelative:migrations\\20240826190339_add name prop to appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,76 +86,249 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SportCenterApi.http",
-              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\SportCenterApi.http",
-              "RelativeDocumentMoniker": "SportCenterApi.http",
-              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\SportCenterApi.http",
-              "RelativeToolTip": "SportCenterApi.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-07-24T15:46:48.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAA4AAAAbAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-24T12:22:28.305Z"
+              "WhenOpened": "2024-07-24T12:22:28.305Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-24T12:22:20.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\WeatherForecast.cs",
-              "RelativeToolTip": "WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "HideEndpointsDocumentFilter.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Filters\\HideEndpointsDocumentFilter.cs",
+              "RelativeDocumentMoniker": "Filters\\HideEndpointsDocumentFilter.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Filters\\HideEndpointsDocumentFilter.cs",
+              "RelativeToolTip": "Filters\\HideEndpointsDocumentFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T12:21:51.421Z"
+              "WhenOpened": "2024-08-26T13:55:04.874Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCgAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T18:41:19.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T17:05:54.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T17:08:25.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T17:33:15.667Z",
+              "WhenOpened": "2024-09-03T13:27:28.392Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Models\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Models\\RegisterDto.cs",
+              "RelativeToolTip": "Models\\RegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T11:37:01.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SportType.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Models\\SportType.cs",
+              "RelativeDocumentMoniker": "Models\\SportType.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Models\\SportType.cs",
+              "RelativeToolTip": "Models\\SportType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T22:03:53.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SportCenterDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\SportCenterDbContext.cs",
+              "RelativeDocumentMoniker": "SportCenterDbContext.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\SportCenterDbContext.cs",
+              "RelativeToolTip": "SportCenterDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T10:38:19.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BlockEndpointMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Middleware\\BlockEndpointMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\BlockEndpointMiddleware.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Middleware\\BlockEndpointMiddleware.cs",
+              "RelativeToolTip": "Middleware\\BlockEndpointMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:15:15.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240826005647_test.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826005647_test.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240826005647_test.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826005647_test.cs",
+              "RelativeToolTip": "Migrations\\20240826005647_test.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:56:47.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240826190339_add name prop to AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826190339_add name prop to AppUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240826190339_add name prop to AppUser.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826190339_add name prop to AppUser.cs",
+              "RelativeToolTip": "Migrations\\20240826190339_add name prop to AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:03:39.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SportCenterApi.csproj",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\SportCenterApi.csproj",
+              "RelativeDocumentMoniker": "SportCenterApi.csproj",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\SportCenterApi.csproj",
+              "RelativeToolTip": "SportCenterApi.csproj",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwBcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-18T10:35:15.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240826005750_added nullable to lastName and sportType properties.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826005750_added nullable to lastName and sportType properties.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240826005750_added nullable to lastName and sportType properties.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826005750_added nullable to lastName and sportType properties.cs",
+              "RelativeToolTip": "Migrations\\20240826005750_added nullable to lastName and sportType properties.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:57:50.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240826005142_added nullable to lastName and sportType fields.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826005142_added nullable to lastName and sportType fields.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240826005142_added nullable to lastName and sportType fields.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240826005142_added nullable to lastName and sportType fields.cs",
+              "RelativeToolTip": "Migrations\\20240826005142_added nullable to lastName and sportType fields.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:51:42.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-24T12:22:20.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240821222451_Init.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240821222451_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240821222451_Init.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240821222451_Init.cs",
+              "RelativeToolTip": "Migrations\\20240821222451_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T22:24:52.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20240821214626_Init.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240821214626_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240821214626_Init.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240821214626_Init.cs",
+              "RelativeToolTip": "Migrations\\20240821214626_Init.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T21:46:26.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240821224319_added LastName to AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240821224319_added LastName to AppUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240821224319_added LastName to AppUser.cs",
+              "ToolTip": "C:\\Users\\pwdlp\\SportCenterApp\\Backend\\SportCenterApi\\Migrations\\20240821224319_added LastName to AppUser.cs",
+              "RelativeToolTip": "Migrations\\20240821224319_added LastName to AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T22:43:19.971Z"
             }
           ]
         }

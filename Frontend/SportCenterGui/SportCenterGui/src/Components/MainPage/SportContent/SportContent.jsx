@@ -22,24 +22,24 @@ const SportContent = () => {
     };
 
     return(
-        <div className={"vh-100 d-flex pt-10"}>
+        <div className={"vh-100 d-flex pt-10 position-relative"}>
             <LeftPentagon
                 isHovered={hoveredComponent === 'left'}
                 onMouseEnter={() => handleMouseEnter('left')}
                 onMouseLeave={() => handleMouseLeave}
-                onNavigate = {() => handleNavigate("/login")}
+                onNavigate = {() => handleNavigate("/trainer/kickboxing")}
             />
             <Hourglass
                 isHovered={hoveredComponent === 'hourglass'}
                 onMouseEnter={() => handleMouseEnter('hourglass')}
                 onMouseLeave={() => handleMouseLeave}
-                onNavigate = {() => handleNavigate("/login")}
+                onNavigate = {() => handleNavigate("/trainer/gym")}
             />
             <RightPentagon
                 isHovered={hoveredComponent === 'right'}
                 onMouseEnter={() => handleMouseEnter('right')}
                 onMouseLeave={() => handleMouseLeave}
-                onNavigate = {() => handleNavigate("/login")}
+                onNavigate = {() => handleNavigate("/trainer/crossfit")}
             />
         </div>
     )

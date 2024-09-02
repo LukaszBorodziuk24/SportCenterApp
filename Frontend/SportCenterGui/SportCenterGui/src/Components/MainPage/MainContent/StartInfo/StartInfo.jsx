@@ -1,7 +1,7 @@
 import {Button, Image} from "react-bootstrap";
-import arrowDown from '@assets/arrow.svg';
 import "./StartInfo.css"
 import {useState} from "react";
+import {FaArrowDown} from "react-icons/fa";
 
 const StartInfo = () =>{
 
@@ -12,7 +12,7 @@ const StartInfo = () =>{
         });
     };
     return(
-        <div className="col-6">
+        <div className="col-5">
             <p className="text-left ms-5 textCustom">
                 PUSH PAST<br/>
                 YOUR <br/>
@@ -21,7 +21,7 @@ const StartInfo = () =>{
 
             <div className={"d-flex position-absolute bottom-0 start-5 m-5"}>
                 <Button onClick={scrollToBottom} className="ms-2 mb-1 buttonGradient buttonCustom">
-                    <Image src={arrowDown}/>
+                    <FaArrowDown className={"arrowStyle"}/>
                 </Button>
             </div>
 

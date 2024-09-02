@@ -1,10 +1,8 @@
-
-
 import "./NavbarComp.css"
 import {Navbar, Nav, Button} from 'react-bootstrap';
 import {useNavigate} from "react-router-dom";
 
-const NavbarComp = ()=>{
+const NavbarComp = () => {
 
     const navigate = useNavigate();
 
@@ -12,22 +10,23 @@ const NavbarComp = ()=>{
         navigate(path);
     }
 
-    return(
+    return (
         <Navbar className="h-10 fixed-top" bg="transparent" variant="dark" expand="lg">
 
             <Navbar.Brand id="logo" href="#home">LOGO</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link className="navButtons" onClick={ () => handleNavigation("/")}>Home</Nav.Link>
-                    <Nav.Link className="navButtons" onClick={ () => handleNavigation("/login")}>Ticket</Nav.Link>
-                    <Nav.Link className="navButtons" href="#trainer">Trainer</Nav.Link>
+                    <Nav.Link className="navButtons" onClick={() => handleNavigation("/")}>Home</Nav.Link>
+                    <Nav.Link className="navButtons" onClick={() => handleNavigation("/")}>Ticket</Nav.Link>
+                    <Nav.Link className="navButtons"
+                              onClick={() => handleNavigation("/trainer/default")}>Trainer</Nav.Link>
                     <Nav.Link className="navButtons" href="#diet">Diet</Nav.Link>
                     <Nav.Link className="navButtons" href="#contact">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto">
                     <Button id="logInButton" className={"buttonGradient"}
-                            onClick={ () => handleNavigation("/login")}>Log in</Button>
+                            onClick={() => handleNavigation("/login")}>Log in</Button>
                 </Nav>
 
             </Navbar.Collapse>
