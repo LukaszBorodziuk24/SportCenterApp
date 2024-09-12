@@ -5,7 +5,7 @@ import {FaHeart} from "react-icons/fa";
 import {FaLocationDot} from "react-icons/fa6";
 
 
-const TrainerTile = () =>{
+const TrainerTile = ({user}) =>{
     return(
         <Card className={"trainerTile bg-transparent border-0 "}>
             <Card.Img
@@ -16,9 +16,9 @@ const TrainerTile = () =>{
                 className={"d-flex justify-content-between align-items-end"}
             >
                 <Col className={"position-relative"}>
-                    <Card.Title>John Doe</Card.Title>
+                    <Card.Title>{user.name} {user.lastName}</Card.Title>
                     <Card.Text className={"d-flex align-items-center greyFont"} >
-                        <FaLocationDot className={"me-2"}/> Warsaw, Poland
+                        <FaLocationDot className={"me-2"}/> {user.city}, {user.country}
                     </Card.Text>
                     <FaHeart className={"heartIcon position-absolute end-0 bottom-0 me-2 mb-4"} />
                 </Col>

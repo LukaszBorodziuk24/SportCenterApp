@@ -5,6 +5,7 @@ namespace SportCenterApi.Services.Interfaces
 {
     public interface IUserService
     {
+        Task<IdentityResult> AddUser(RegisterDto model);
 
     }
 }

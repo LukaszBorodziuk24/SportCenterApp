@@ -1,0 +1,42 @@
+
+
+
+.filterButton{
+    height: auto;
+    width: auto;
+    padding: 0 0.5% 0 0.5%;
+    background-color: transparent;
+    border: #1ABBB1 solid 1px;
+    border-radius: 10px;
+    color: #fafff4;
+}
+
+.filterButton:hover{
+    background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+    border: #168881 solid 1px;
+}
+
+.filterIcon{
+    scale: 120%;
+}
+
+.popup-style{
+    border: #1ABBB133 1px solid;
+    background-color: #070707;
+    box-shadow: 0 0 90px 0 rgba(26, 187, 177, 0.20);
+    color: #cbc7c7;
+}
+
+.custom-radio .form-check-input:checked {
+    background-color: #168881;
+    border-color: #1ABBB133;
+}
+
+.custom-radio .form-check-input {
+    background-color: #1f2226;;
+    border-color: #414040;
+}
+
+.custom-radio .form-check-input:focus {
+    box-shadow: 0 0 90px 0 rgba(26, 187, 177, 0.20);
+}

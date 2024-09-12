@@ -13,7 +13,7 @@ const NavbarComp = () => {
     return (
         <Navbar className="h-10 fixed-top" bg="transparent" variant="dark" expand="lg">
 
-            <Navbar.Brand id="logo" href="#home">LOGO</Navbar.Brand>
+            <Navbar.Brand id="logo" onClick={() => handleNavigation("/")}>LOGO</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
@@ -25,7 +25,7 @@ const NavbarComp = () => {
                     <Nav.Link className="navButtons" href="#contact">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto">
-                    <Button id="logInButton" className={"buttonGradient"}
+                    <Button className={"buttonGradient border-0 me-4 rounded-5 logInButton"}
                             onClick={() => handleNavigation("/login")}>Log in</Button>
                 </Nav>
 

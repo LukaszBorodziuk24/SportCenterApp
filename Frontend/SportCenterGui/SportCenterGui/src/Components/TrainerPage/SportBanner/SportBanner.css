@@ -5,17 +5,3 @@
     width: auto;
 
 }
-
-.filterButton{
-    height: auto;
-    width: auto;
-    padding: 0 0.5% 0 0.5%;
-    background-color: transparent;
-    border: #1ABBB1 solid 1px;
-    border-radius: 10px;
-    color: #fafff4;
-}
-
-.filterIcon{
-    scale: 120%;
-}

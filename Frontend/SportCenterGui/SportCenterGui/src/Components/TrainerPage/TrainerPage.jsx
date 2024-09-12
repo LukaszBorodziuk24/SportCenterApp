@@ -13,6 +13,9 @@ import SportBanner from "./SportBanner/SportBanner.jsx";
 
 const TrainerPage = () => {
     const {sport} = useParams();
+    const [filterBy, setFilterBy] = useState("a");
+
+
     const sportType={
         gym: GymBg,
         crossfit: CrossfitBg,
@@ -27,8 +30,8 @@ const TrainerPage = () => {
     return(
         <div className={"trainerCustom"} style={sportStyle}>
             <NavbarComp/>
-            <SportBanner/>
-            <TrainerMainContent/>
+            <SportBanner sport={sport} setFilterBy={setFilterBy} filterBy={filterBy}/>
+            <TrainerMainContent sport={sport} filterBy={filterBy}/>
         </div>
     )
 }

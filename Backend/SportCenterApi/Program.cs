@@ -8,12 +8,23 @@ using Microsoft.AspNetCore.Routing;
 using SportCenterApi.Middleware;
 using SportCenterApi.Filters;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using SportCenterApi.Mapping;
+using AutoMapper;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.Formatting = Formatting.Indented;
+        options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+    });
 
 builder.Services.AddEndpointsApiExplorer();
 
@@ -38,6 +49,10 @@ builder.Services.AddIdentityApiEndpoints<AppUser>()
     .AddEntityFrameworkStores<DbSportCenterContext>();
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ITrainerService, TrainerService>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
 
 
 

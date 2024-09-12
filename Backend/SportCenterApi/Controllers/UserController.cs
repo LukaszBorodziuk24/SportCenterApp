@@ -12,33 +12,22 @@ namespace SportCenterApi.Controllers
     {
         private readonly IUserService _userService;
 
-        private readonly UserManager<AppUser> _userManager;
 
 
-        public UserController(IUserService userService, UserManager<AppUser> userManager)
+        public UserController(IUserService userService)
         {
             _userService = userService;
-            _userManager = userManager;
         }
 
-
         [HttpPost("register")]
-        public async Task<IActionResult> OnPost(RegisterDto model)
+        public async Task<IActionResult> AddUser(RegisterDto model)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var user = new AppUser
-            {
-                Name = model.Name,
-                UserName = model.Email,
-                Email = model.Email,
-                LastName = model.LastName
-            };
-
-            var result = await _userManager.CreateAsync(user, model.Password);
+            var result = await _userService.AddUser(model);
 
             if (result.Succeeded)
             {

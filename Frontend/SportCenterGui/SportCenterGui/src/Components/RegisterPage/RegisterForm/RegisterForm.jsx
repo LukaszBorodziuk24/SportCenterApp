@@ -82,7 +82,7 @@ const RegisterForm = () => {
 
             if (response.ok) {
                 console.log('Registration successful');
-                handleNavigation("/login"); // Przekieruj po udanej rejestracji
+                handleNavigation("/login");
             } else {
                 const errorData = await response.json();
                 console.error('Registration failed:', errorData);
