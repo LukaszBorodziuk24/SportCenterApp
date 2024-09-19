@@ -25,7 +25,7 @@ const NavbarComp = () => {
                     <Nav.Link className="navButtons" href="#contact">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto">
-                    <Button className={"buttonGradient border-0 me-4 rounded-5 logInButton"}
+                    <Button className={"mainAppButton border-0 me-4 rounded-5 logInButton"}
                             onClick={() => handleNavigation("/login")}>Log in</Button>
                 </Nav>
 

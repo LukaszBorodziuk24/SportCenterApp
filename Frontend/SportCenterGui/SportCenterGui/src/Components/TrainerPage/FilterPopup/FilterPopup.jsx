@@ -2,7 +2,7 @@ import "./FilterPopup.css"
 import Popup from "reactjs-popup";
 import {IoFilter} from "react-icons/io5";
 import {Button, Form} from "react-bootstrap";
-import {BiSort} from "react-icons/bi";
+import {TbArrowsSort} from "react-icons/tb";
 
 
 const FilterPopup = () => {
@@ -13,7 +13,7 @@ const FilterPopup = () => {
     return(
         <Popup
             trigger={open => (<button className={"filterButton me-4 pe-3 ps-3"}>
-                        <BiSort className={"filterIcon"}/> Filter
+                        <TbArrowsSort className={"filterIcon h-100"}/> Sort
                     </button>)}
             position="left top"
         >

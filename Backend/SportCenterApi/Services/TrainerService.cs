@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using SportCenterApi.Entities;
 using SportCenterApi.Models;
 using SportCenterApi.Services.Interfaces;
 using System.Linq.Expressions;

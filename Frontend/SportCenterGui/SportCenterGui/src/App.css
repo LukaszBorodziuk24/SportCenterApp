@@ -23,7 +23,7 @@
     margin-bottom: 5vh;
 }
 
-.buttonGradient{
+.mainAppButton{
     background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
 }
 
@@ -31,23 +31,31 @@
     color: #88AAA8;
 }
 
-/*.buttonGradient:hover{*/
-/*    background: radial-gradient(50% 50% at 50% 50%, #8f71a9 0%, #52049b 100%);*/
-/*}*/
-
-/*.buttonGradient:active{*/
-/*    background: radial-gradient(50% 50% at 50% 50%, #52049b 0%, #8f71a9 100%);*/
-
-/*}*/
-
-
-
-.buttonGradient:hover{
+.mainAppButton:hover{
     background: radial-gradient(50% 50% at 50% 50%, #20B4D4 0%, #28819D 100%);
 }
 
-.buttonGradient:active{
+.mainAppButton:active{
     background: radial-gradient(50% 50% at 50% 50%, #28819D 0%, #20B4D4 100%);
 
 }
 
+.transparentButton{
+    background: none;
+    border: none;
+}
+
+.transparentButton:hover{
+    color: #fafff4;
+}
+
+.altAppButton{
+    background: none;
+    border: 1px solid #1ABBB1;
+    color: white;
+}
+
+.altAppButton:hover{
+    background: radial-gradient(50% 50% at 50% 50%, #1ABBB1 0%, #168881 100%);
+    border-color: #168881;
+}

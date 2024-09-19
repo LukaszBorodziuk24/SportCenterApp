@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using SportCenterApi.Models.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 
-namespace SportCenterApi.Models
+namespace SportCenterApi.Entities
 {
     public class AppUser : IdentityUser
     {
@@ -15,6 +16,8 @@ namespace SportCenterApi.Models
         public string? Country { get; set; }
 
         public float? Rating { get; set; }
+
+        public ICollection<BmiData> BmiDataCollection { get; set; }
 
 
     }

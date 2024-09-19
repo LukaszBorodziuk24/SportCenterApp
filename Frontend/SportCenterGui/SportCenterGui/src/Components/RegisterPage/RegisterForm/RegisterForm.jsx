@@ -199,13 +199,13 @@ const RegisterForm = () => {
                         </Form.Control.Feedback>
                     </FormGroup>
 
-                    <Button className={"mt-3 rounded-3 border-0 p-2 buttonGradient submitButton"} type={"submit"}>
+                    <Button className={"mt-3 rounded-3 border-0 p-2 mainAppButton"} type={"submit"}>
                         Create Account
                     </Button>
 
                     <p className={"d-flex justify-content-center mb-0"}>OR</p>
 
-                    <Button className={"loginGoogle rounded-3 p-2"}>Sign up with Google</Button>
+                    <button className={"altAppButton rounded-3 p-2"}>Sign up with Google</button>
 
                     <button
                         className={"transparentButton greyFont"}

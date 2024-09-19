@@ -1,4 +1,4 @@
-﻿namespace SportCenterApi.Models
+﻿namespace SportCenterApi.Models.Enums
 {
     public enum SportType
     {

@@ -20,7 +20,7 @@ const StartInfo = () =>{
             </p>
 
             <div className={"d-flex position-absolute bottom-0 start-5 m-5"}>
-                <Button onClick={scrollToBottom} className="ms-2 mb-1 buttonGradient buttonCustom">
+                <Button onClick={scrollToBottom} className="ms-2 mb-1 mainAppButton buttonCustom">
                     <FaArrowDown className={"arrowStyle"}/>
                 </Button>
             </div>

@@ -1,0 +1,34 @@
+
+
+
+.bmiResultTitle{
+    color: #65A4A0;
+    font-weight: bold;
+
+}
+
+.bmiResultValue{
+    font-weight: bold;
+}
+
+.bmiResultMsg{
+    color: #fdfdfd;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5vh;
+    padding: 1vh 15vw 1vh 15vw;
+}
+
+.bmiResultWrapper{
+    background: rgba(80, 80, 80, 0.09);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 4vh;
+    padding: 3vh;
+}
+
+.bmiResultIcon{
+    color: #19B9AF;
+}

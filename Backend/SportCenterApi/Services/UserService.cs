@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using SportCenterApi.Entities;
 using SportCenterApi.Models;
 using SportCenterApi.Services.Interfaces;
 

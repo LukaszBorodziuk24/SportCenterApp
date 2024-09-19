@@ -1,0 +1,38 @@
+.bmiCustom{
+    border-radius: 5vh;
+    background-image: url("../../../../../assets/BmiTileBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bmiTitle{
+    color: #65A4A0;
+    font-weight: bold;
+}
+
+.bmiIconWrapper{
+    background: rgba(80, 80, 80, 0.09);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 2vh;
+}
+
+.bmiIcon{
+    scale: 200%;
+    color: #19B9AF;
+}
+
+.bmiResult{
+    font-weight: bold;
+}
+
+.bmiMsg{
+    color: #fdfdfd;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}

@@ -42,5 +42,7 @@ namespace SportCenterApi.Controllers
             return BadRequest(ModelState);
         }
 
+
+
     }
 }

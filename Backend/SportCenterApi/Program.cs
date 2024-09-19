@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SportCenterApi;
-using SportCenterApi.Models;
 using SportCenterApi.Services.Interfaces;
 using SportCenterApi.Services;
 using Microsoft.AspNetCore.Routing;
@@ -12,6 +11,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using SportCenterApi.Mapping;
 using AutoMapper;
+using SportCenterApi.Entities;
 
 
 
@@ -50,8 +50,14 @@ builder.Services.AddIdentityApiEndpoints<AppUser>()
 
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ITrainerService, TrainerService>();
+builder.Services.AddScoped<IBmiService, BmiService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
 
 
 

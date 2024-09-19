@@ -1,0 +1,67 @@
+
+.expandedBmiBg{
+    background-image: url("../../../../../../assets/BmiTileBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fafff4;
+    font-size: 2.5vh;
+
+
+}
+
+.bmiBackIcon{
+    scale: 120%;
+}
+
+.bmiTitleIcon{
+    height: 100%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.genderText{
+    font-weight: bold;
+    color: #65A4A0;
+}
+
+.genderIcon{
+    color: white;
+    height: 60px;
+}
+
+.genderIconWrapper{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    color: #19B9AF;
+}
+
+.bmiText{
+    font-weight: bold;
+}
+
+.customForm{
+    background: transparent;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #fafff4;
+}
+
+.customForm::placeholder{
+    color: rgb(168, 168, 168);
+}
+
+.customForm:focus{
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.bmiButton{
+    font-size: 2.5vh;
+}
+
+.selected{
+    background: radial-gradient(50% 50% at 50% 50%, #28819D 0%, #20B4D4 100%);
+}

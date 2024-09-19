@@ -15,8 +15,8 @@ const LeftPentagon = ({isHovered, onMouseEnter, onMouseLeave, onNavigate}) => {
     return (
         <animated.div
             style={props}
-            onMouseEnter={onMouseEnter} // Ustaw hover na true
-            onMouseLeave={onMouseLeave} // Ustaw hover na false
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
             onClick={onNavigate}
             className="left-pentagon"
 

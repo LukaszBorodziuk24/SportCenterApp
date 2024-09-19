@@ -1,37 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useTransition, animated } from '@react-spring/web';
 import './Tiles.css';
-
-const tileData = [
-    {
-        size: {width: '58.8%', height: '42%'},
-        position: {bottom: '0', left: '0'},
-        content: <div>Content 1</div>
-    },
-    {
-        size: {width: '58.8%', height: '40%'},
-        position: {top: '0', left: '0'},
-        content: <img className={"img-fluid"} src={""} alt={"Content 2"}/>
-    },
-    {
-        size: {width: '30%', height: '55%'},
-        position: {top: '0', right: '0'},
-        content: <div>Content 3</div>
-    },
-    {
-        size: {width: '30%', height: '28%'},
-        position: {bottom: '0', right: '0'},
-        content: <div>Content 4</div>
-    }
-];
+import BmiTile from "./BmiTile/BmiTile.jsx";
+import ExpandedTiles from "./ExpandedTiles/ExpandedTiles.jsx";
 
 const Tiles = () => {
+    const [expandedTile, setExpandedTile] = useState(null);
+
+    const transitions = useTransition(expandedTile, {
+        from: {
+            transform: 'scale(0.1)',
+            opacity: 0,
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            transformOrigin: 'bottom right'
+        },
+        enter: { transform: 'scale(1)', opacity: 1 },
+        leave: { transform: 'scale(0.1)', opacity: 0 },
+        config: { duration: 300 },
+        keys: [expandedTile]
+    });
+
+    const handleExpand = (tile) => {
+        setExpandedTile(tile);
+    };
+
+    const handleClose = () => {
+        setExpandedTile(null);
+    };
+
     return (
-        <div className="grid-container col-7">
-            <div className={"grid-item item1"}>1</div>
-            <div className={"grid-item item2"}>2</div>
-            <div className={"grid-item item3"}>3</div>
-            <div className={"grid-item item4"}>4</div>
-        </div>
+        <>
+            <div className="grid-container col-7">
+                <div className={"grid-item item1"} onClick={() => handleExpand('item1')}>
+                    <p>Item 1</p>
+                </div>
+                <div className={"grid-item item2"} onClick={() => handleExpand('item2')}>
+                    <p>Item 2</p>
+                </div>
+                <div className={"grid-item item3"} onClick={() => handleExpand('item3')}>
+                    <p>Item 3</p>
+                </div>
+                <div className="grid-item item4" onClick={() => handleExpand('item4')}>
+                    <BmiTile reloadOnClose={handleClose}/>
+                </div>
+
+                {transitions((style, item) =>
+                    item ? (
+                        <animated.div className="expanded-tile" style={style} key={item}>
+                            <ExpandedTiles tile={expandedTile} onClose={handleClose} />
+                        </animated.div>
+                    ) : null
+                )}
+            </div>
+        </>
     );
 };
 

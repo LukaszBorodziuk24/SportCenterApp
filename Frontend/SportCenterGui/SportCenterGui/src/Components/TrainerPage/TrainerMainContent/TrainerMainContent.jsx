@@ -28,8 +28,10 @@ const TrainerMainContent = ({sport, filterBy}) => {
             const signal = abortControllerRef.current.signal;
 
             const response =
-                await fetch(`https://localhost:7221/api/Trainer/getAll?pageNumber=${pageNumberRef.current}&pageSize=${pageSize}&sortBy=""&filterBy=${filterBy}`,
-                    {signal});
+                await fetch(`https://localhost:7221/api/Trainer/getAll?pageNumber=${pageNumberRef.current}&pageSize=${pageSize}&sortBy=""&filterBy=${filterBy}`,{
+                    method: 'GET',
+                    signal
+                });
             const data = await response.json();
 
             setUsers(prevUsers => [...prevUsers, ...data]);

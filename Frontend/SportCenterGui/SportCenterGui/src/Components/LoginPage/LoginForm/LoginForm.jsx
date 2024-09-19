@@ -107,13 +107,13 @@ const LoginForm = () => {
                     </Form.Group>
 
 
-                    <Button  className={"mt-3 rounded-3 border-0 p-2  buttonGradient submitButton"}
+                    <Button  className={"mt-3 rounded-3 border-0 p-2  mainAppButton submitButton"}
                              type={"submit"}
                     >Log In</Button>
 
                     <p className={"d-flex justify-content-center mb-0"}>OR</p>
 
-                    <Button className={"loginGoogle rounded-3 p-2"}>Log In with Google</Button>
+                    <button className={"altAppButton rounded-3 p-2"}>Log In with Google</button>
 
                     <button
                         className={"transparentButton greyFont"}
