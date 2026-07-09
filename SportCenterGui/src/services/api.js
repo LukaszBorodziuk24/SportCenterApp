@@ -240,4 +240,8 @@ export const reviewAPI = {
   }
 };
 
+export const rankingAPI = {
+  getRankings: async () => (await apiPublic.get('/ranking')).data,
+};
+
 export { apiAuth, apiPublic };

@@ -2,33 +2,31 @@ import { FaTrophy, FaStar } from "react-icons/fa";
 import "./RankingTile.css"
 import { Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import { rankingAPI } from "../../../../../services/api";
 
 const RankingTile = ({reloadOnClose}) => {
     
-    // Mock data for top trainers - this will be replaced with API call later
+
     const [topTrainers, setTopTrainers] = useState({
-        kickboxing: [
-            { id: 1, name: "John Smith", specialty: "Strength Training", rating: 4.8 },
-            { id: 2, name: "Mike Johnson", specialty: "Boxing Techniques", rating: 4.7 },
-            { id: 3, name: "David Wilson", specialty: "Martial Arts", rating: 4.9 },
-            { id: 4, name: "Chris Brown", specialty: "Combat Sports", rating: 4.6 },
-            { id: 5, name: "James Davis", specialty: "Kickboxing", rating: 4.8 }
-        ],
-        gym: [
-            { id: 1, name: "Sarah Miller", specialty: "Strength Training", rating: 4.9 },
-            { id: 2, name: "Lisa Anderson", specialty: "Bodybuilding", rating: 4.7 },
-            { id: 3, name: "Jennifer Lee", specialty: "Weight Training", rating: 4.8 },
-            { id: 4, name: "Amanda White", specialty: "Fitness Coaching", rating: 4.6 },
-            { id: 5, name: "Rachel Green", specialty: "Muscle Building", rating: 4.9 }
-        ],
-        crossfit: [
-            { id: 1, name: "Robert Taylor", specialty: "CrossFit Training", rating: 4.8 },
-            { id: 2, name: "Thomas Moore", specialty: "Functional Fitness", rating: 4.7 },
-            { id: 3, name: "Daniel Jackson", specialty: "WOD Coaching", rating: 4.9 },
-            { id: 4, name: "Matthew Harris", specialty: "Metcon Training", rating: 4.6 },
-            { id: 5, name: "Christopher Clark", specialty: "High Intensity", rating: 4.8 }
-        ]
+        gym: [],
+        kickboxing: [],
+        crossfit: []
     });
+
+
+    useEffect(() => {
+        const fetchRankings = async () => {
+            const ranking = await rankingAPI.getRankings();
+
+            setTopTrainers({
+                gym: ranking.gym,
+                kickboxing: ranking.kickboxing,
+                crossfit: ranking.crossfit
+            });
+        };
+
+        fetchRankings();
+    }, []);
 
     return (
         <>

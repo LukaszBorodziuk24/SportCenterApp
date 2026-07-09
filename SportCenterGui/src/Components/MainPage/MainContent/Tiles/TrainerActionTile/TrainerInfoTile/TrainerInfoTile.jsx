@@ -41,16 +41,7 @@ const TrainerInfoTile = () => {
 
                 console.log('Fetched profile data:', profileData);
 
-                // Fetch 5 most recent reviews
-                const reviewResponse = await reviewAPI.getReviews(trainerId, { 
-                    pageNumber: 1, 
-                    pageSize: 5 
-                });
-                
-                console.log('Review API response:', reviewResponse);
-                console.log('Review items:', reviewResponse.items);
-                
-                setReviews(reviewResponse.items || []);
+                // No need to fetch reviews anymore (as requested)
                 setLoading(false);
             } catch (err) {
                 console.error('Error fetching trainer info:', err);
@@ -100,53 +91,25 @@ const TrainerInfoTile = () => {
                         </div>
                     )}
                 </div>
-                <div className="trainer-details">
-                    <h4 className="trainer-name">{trainer.name} {trainer.lastName}</h4>
-                    <div className="trainer-rating">
-                        <FaStar className="text-warning me-1" />
-                        <span>{trainer.rating}</span>
-                    </div>
-                    <p className="trainer-location">{trainer.city}, {trainer.country}</p>
-                    <p className="trainer-sport">Sport: {trainer.sportType}</p>
+                <div className="trainer-details ms-3">
+                    <h4 className="trainer-name">
+                        {trainer.name} {trainer.lastName}
+                        <span className="ms-2">
+                            <FaStar className="text-warning" /> 
+                            <span className="ms-1">{trainer.rating}</span>
+                        </span>
+                    </h4>
+                    <p className="trainer-location mb-1">{trainer.city}, {trainer.country}</p>
+                    <p className="trainer-sport mb-0">Sport: {trainer.sportType}</p>
                 </div>
             </div>
 
-            {/* View Profile Button */}
             <button 
                 className="view-profile-btn"
                 onClick={handleNavigateToProfile}
             >
                 View Full Profile
             </button>
-
-            {/* Recent Reviews Section */}
-            <div className="recent-reviews">
-                <h5>Recent Reviews</h5>
-                {reviews.length > 0 ? (
-                    <div className="reviews-container">
-                        {reviews.map(review => (
-                            <div key={review.id} className="review-card">
-                                <div className="d-flex justify-content-between align-items-start mb-2">
-                                    <div>
-                                        <h6>{review.userName}</h6>
-                                        <p className="small text-muted mb-0">
-                                            <FaStar className="text-warning me-1" />
-                                            {review.rating}
-                                        </p>
-                                    </div>
-                                    <small className="text-muted">
-                                        <FaCalendarAlt className="me-1" />
-                                        {new Date(review.createdAt).toLocaleDateString()}
-                                    </small>
-                                </div>
-                                <p className="mb-0">{review.comment}</p>
-                            </div>
-                        ))}
-                    </div>
-                ) : (
-                    <p className="empty-state">No reviews yet</p>
-                )}
-            </div>
         </div>
     );
 };
