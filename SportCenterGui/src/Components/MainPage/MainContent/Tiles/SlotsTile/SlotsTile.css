@@ -1,5 +1,10 @@
 .slotsTile {
-    background: linear-gradient(135deg, #03e7b2 0%, #6d989e 100%);
+    background-image: url("/src/assets/defaultProfileAvatar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
     border-radius: 25px;
     transition: all 0.3s ease;
     display: flex;

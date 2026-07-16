@@ -1,11 +1,20 @@
 import { FaTrophy, FaStar } from "react-icons/fa";
 import "./RankingTile.css"
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { rankingAPI } from "../../../../../services/api";
+import { useNavigate } from "react-router-dom";
 
 const RankingTile = ({reloadOnClose}) => {
     
+
+    const navigate = useNavigate();
+
+    const handleTrainerClick = (trainerId) => {
+        if (trainerId) {
+            navigate(`/trainer/profile/${trainerId}`);
+        }
+    };
 
     const [topTrainers, setTopTrainers] = useState({
         gym: [],
@@ -42,7 +51,7 @@ const RankingTile = ({reloadOnClose}) => {
                                 <Col md={4} className="category-column">
                                     <h6 className="category-title">Kickboxing</h6>
                                     {topTrainers.kickboxing.map((trainer, index) => (
-                                        <div key={trainer.id} className="trainer-item d-flex justify-content-between align-items-center mb-2">
+                                        <div key={trainer.userId} className="trainer-item d-flex justify-content-between align-items-center mb-2" style={{ cursor: "pointer" }} onClick={() => handleTrainerClick(trainer.userId)}>
                                             <span className="trainer-position">{index + 1}</span>
                                             <span className="trainer-name">{trainer.name}</span>
                                             <div className="trainer-rating d-flex align-items-center">
@@ -55,9 +64,9 @@ const RankingTile = ({reloadOnClose}) => {
                                 <Col md={4} className="category-column">
                                     <h6 className="category-title">Gym</h6>
                                     {topTrainers.gym.map((trainer, index) => (
-                                        <div key={trainer.id} className="trainer-item d-flex justify-content-between align-items-center mb-2">
+                                        <div key={trainer.userId} className="trainer-item d-flex justify-content-between align-items-center mb-2" style={{ cursor: "pointer" }} onClick={() => handleTrainerClick(trainer.userId)}>
                                             <span className="trainer-position">{index + 1}</span>
-                                            <span className="trainer-name">{trainer.name}</span>
+                                            <span className="trainer-name" >{trainer.name}</span>
                                             <div className="trainer-rating d-flex align-items-center">
                                                 <FaStar className="star-icon" />
                                                 <span className="rating-value">{trainer.rating}</span>
@@ -68,7 +77,7 @@ const RankingTile = ({reloadOnClose}) => {
                                 <Col md={4} className="category-column">
                                     <h6 className="category-title">Crossfit</h6>
                                     {topTrainers.crossfit.map((trainer, index) => (
-                                        <div key={trainer.id} className="trainer-item d-flex justify-content-between align-items-center mb-2">
+                                        <div key={trainer.userId} className="trainer-item d-flex justify-content-between align-items-center mb-2" style={{ cursor: "pointer" }} onClick={() => handleTrainerClick(trainer.userId)}>
                                             <span className="trainer-position">{index + 1}</span>
                                             <span className="trainer-name">{trainer.name}</span>
                                             <div className="trainer-rating d-flex align-items-center">

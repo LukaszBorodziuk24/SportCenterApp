@@ -11,7 +11,7 @@ import { useAuth } from "../../../contexts/AuthContext.jsx";
 import BecomeTrainerModal from "../BecomeTrainerModal/BecomeTrainerModal.jsx";
 
 
-const SportBanner = ({sport, setFilterBy, filterBy}) => {
+const SportBanner = ({sport, setFilterBy, filterBy, sortBy, setSortBy, isAscending, setIsAscending}) => {
     const { isAuthorized } = useAuth();
     const [showModal, setShowModal] = useState(false);
 
@@ -30,7 +30,7 @@ const SportBanner = ({sport, setFilterBy, filterBy}) => {
             </div>
 
             <div className={"col d-flex justify-content-xxl-end justify-content-lg-center"}>
-                <FilterPopup/>
+                <FilterPopup sortBy={sortBy} setSortBy={setSortBy} isAscending={isAscending} setIsAscending={setIsAscending}/>
                 <SearchBar setFilterBy={setFilterBy}/>
             </div>
             <BecomeTrainerModal

@@ -11,12 +11,14 @@ import SportBanner from "./SportBanner/SportBanner.jsx";
 const TrainerPage = () => {
     const {sport} = useParams();
     const [filterBy, setFilterBy] = useState("");
+    const [sortBy, setSortBy] = useState("name");
+    const [isAscending, setIsAscending] = useState(false);
 
     return(
         <div className={"trainerCustom"} style={getTrainerBg(sport)}>
             <NavbarComp/>
-            <SportBanner sport={sport} setFilterBy={setFilterBy} filterBy={filterBy}/>
-            <TrainerMainContent sport={sport} filterBy={filterBy}/>
+            <SportBanner sport={sport} setFilterBy={setFilterBy} filterBy={filterBy} sortBy={sortBy} setSortBy={setSortBy} isAscending={isAscending} setIsAscending={setIsAscending}/>
+            <TrainerMainContent userSportType={sport} filterBy={filterBy} sortBy={sortBy} isAscending={isAscending}/>
         </div>
     )
 }

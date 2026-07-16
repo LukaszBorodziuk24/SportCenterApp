@@ -2,8 +2,10 @@
     background-image: url("../../../../../assets/rankingbg.jpg");
     background-size: cover;
     background-position: center;
+    
     border-radius: 25px;
     height: 100%;
+    width: 100%;
     transition: all 0.3s ease;
     padding: 10px;
 }

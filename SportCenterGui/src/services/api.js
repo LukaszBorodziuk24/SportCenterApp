@@ -68,6 +68,7 @@ export const authAPI = {
   register: async (data) => (await apiPublic.post('/auth/register', data)).data,
   login: async (data) => (await apiPublic.post('/auth/login', data)).data,
   getCurrentUser: async () => (await apiAuth.get('/auth/me')).data,
+  getRole: async () => (await apiAuth.get('/auth/role')).data,
 };
 
 export const bmiAPI = {
@@ -88,18 +89,41 @@ export const bmiAPI = {
 
 export const trainerAPI = {
   getAll: async (
-    { pageNumber, pageSize, filterBy, sortBy, isAscending, includePhoto },
-    { signal } = {}
+      { pageNumber, pageSize, filterBy, sortBy, isAscending, userSportType, includePhoto },
+      { signal } = {}
   ) => {
-    const params = {
-      PageNumber: pageNumber,
-      PageSize: pageSize,
-      ...(filterBy !== undefined && filterBy !== null && filterBy !== '' ? { FilterBy: filterBy } : {}),
-      ...(sortBy !== undefined && sortBy !== null && sortBy !== '' ? { SortBy: sortBy } : {}),
-      ...(typeof isAscending === 'boolean' ? { IsAscending: isAscending } : {}),
-      ...(typeof includePhoto === 'boolean' ? { IncludePhoto: includePhoto } : {}),
-    };
-    return (await apiAuth.get('/trainer/getAll', { params, signal })).data;
+
+      const sportTypeMap = {
+          gym: 'Gym',
+          kickboxing: 'Kickboxing',
+          crossfit: 'Crossfit',
+      };
+
+      const normalizedSportType = userSportType
+          ? sportTypeMap[userSportType] || userSportType
+          : null;
+
+      const params = {
+          PageNumber: pageNumber,
+          PageSize: pageSize,
+          ...(filterBy !== undefined && filterBy !== null && filterBy !== '' 
+              ? { FilterBy: filterBy } 
+              : {}),
+          ...(sortBy !== undefined && sortBy !== null && sortBy !== '' 
+              ? { SortBy: sortBy } 
+              : {}),
+          ...(typeof isAscending === 'boolean' 
+              ? { IsAscending: isAscending } 
+              : {}),
+          ...(normalizedSportType 
+              ? { SportType: normalizedSportType } 
+              : {}),
+          ...(typeof includePhoto === 'boolean' 
+              ? { IncludePhoto: includePhoto } 
+              : {}),
+      };
+
+      return (await apiAuth.get('/trainer/getAll', { params, signal })).data;
   },
   getProfileDetails: async (trainerId, { signal } = {}) => {
     const sportTypeMap = {

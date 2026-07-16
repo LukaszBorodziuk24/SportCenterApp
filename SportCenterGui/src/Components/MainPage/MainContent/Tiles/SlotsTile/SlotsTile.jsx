@@ -1,18 +1,31 @@
 import "./SlotsTile.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import UserSlotsTile from "./UserSlotsTile/UserSlotsTile.jsx";
 import TrainerSlotsTile from "./TrainerSlotsTile/TrainerSlotsTile.jsx";
+import { authAPI } from "../../../../../services/api.js";
 
 const SlotsTile = () => {
-    // Placeholder for user role check - this would be replaced with actual auth logic
-    const [isUserTrainer] = useState(true); // This should be replaced with real authentication check
+    const [role, setRole] = useState(null);
+
+    useEffect(() => {
+    (async () => {
+        const role = await authAPI.getRole();
+        console.log(role);
+        setRole(role);
+    })();
+    }, []);
+
+
+
 
     return (
         <div className="slotsTile d-flex flex-column align-items-center justify-content-between h-100">
             <div className="w-100 h-100">
-                {isUserTrainer ? (
+                {role === "Trainer" && (
                     <TrainerSlotsTile />
-                ) : (
+                )}
+
+                {role === "User" && (
                     <UserSlotsTile />
                 )}
             </div>

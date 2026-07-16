@@ -7,10 +7,10 @@ import SportBanner from "../SportBanner/SportBanner.jsx";
 import useUsersFetch from "../../../hooks/useFetchUsers.js";
 
 
-const TrainerMainContent = ({sport, filterBy}) => {
+const TrainerMainContent = ({userSportType, filterBy, sortBy, isAscending}) => {
     const [componentKey, setComponentKey] = useState(0); // Initialize componentKey state
 
-    const { data: users, hasMore, showLoading, loadMore } = useUsersFetch(filterBy, 8, componentKey);
+    const { data: users, hasMore, showLoading, loadMore } = useUsersFetch(filterBy, sortBy, isAscending, userSportType, 8, componentKey);
 
     useEffect(() => {
         setComponentKey((prevKey) => prevKey + 1);
