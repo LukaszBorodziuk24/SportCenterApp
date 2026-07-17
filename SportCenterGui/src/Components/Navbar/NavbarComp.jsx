@@ -20,11 +20,8 @@ const NavbarComp = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <Nav.Link className="navButtons" onClick={() => handleNavigation("/")}>Home</Nav.Link>
-                    <Nav.Link className="navButtons" onClick={() => handleNavigation("/")}>Ticket</Nav.Link>
                     <Nav.Link className="navButtons"
-                              onClick={() => handleNavigation("/trainer/default")}>Trainer</Nav.Link>
-                    <Nav.Link className="navButtons" href="#diet">Diet</Nav.Link>
-                    <Nav.Link className="navButtons" href="#contact">Contact</Nav.Link>
+                              onClick={() => handleNavigation("/trainer")}>Trainer</Nav.Link>
                     <Nav.Link className="navButtons" onClick={() => handleNavigation("/admin")}>Admin</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto">

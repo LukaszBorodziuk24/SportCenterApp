@@ -56,7 +56,8 @@ const BecomeTrainerModal = ({ show, onClose, onSuccess }) => {
 
     return (
         <Modal show={show} onHide={handleHide} centered backdrop={submitting ? "static" : true}>
-            <Form onSubmit={handleSubmit}>
+            <div style={{ backgroundColor: "#0db48d", borderRadius: "10px" }}>
+                <Form onSubmit={handleSubmit}>
                 <Modal.Header closeButton={!submitting} className="add-user-bg">
                     <Modal.Title>Become a Trainer</Modal.Title>
                 </Modal.Header>
@@ -144,6 +145,8 @@ const BecomeTrainerModal = ({ show, onClose, onSuccess }) => {
                     </Button>
                 </Modal.Footer>
             </Form>
+            </div>
+            
         </Modal>
     );
 };

@@ -17,8 +17,6 @@ const RegisterForm = () => {
         confirmPassword: ''
     });
 
-
-
     const [showPassword, setShowPassword] = useState(false);
 
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -26,6 +24,8 @@ const RegisterForm = () => {
     const [errors, setErrors] = useState({
         confirmPassword: ''
     });
+    
+    const [registerError, setRegisterError] = useState(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -80,8 +80,10 @@ const RegisterForm = () => {
         } catch (error) {
             if (error.response && error.response.data) {
                 console.error('Registration failed:', error.response.data);
+                setRegisterError(error.response.data.message || 'Registration failed');
             } else {
                 console.error('An error occurred:', error);
+                setRegisterError('Registration failed. Please try again.');
             }
         }
     };
@@ -103,6 +105,11 @@ const RegisterForm = () => {
             <div className={"d-flex align-items-center justify-content-center w-100 flex-column"}>
                 <p className={"h2"}>Create an account</p>
                 <p className={""}>Lorem Ipsum is simply dummy text of the printing and</p>
+                {registerError && (
+                    <div className="alert alert-danger text-center mb-3 w-50">
+                        {registerError}
+                    </div>
+                )}
                 <Form className={"d-flex flex-column gap-3 w-50"} onSubmit={handleSubmit}>
                     <div className={"row"}>
                         <div className={"col-6"}>

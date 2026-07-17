@@ -61,6 +61,11 @@ const LoginForm = () => {
             <Col className={"d-flex align-items-center justify-content-center w-100 flex-column"}>
                 <p className={"h2"}>Welcome back</p>
                 <p className={""}>Lorem ipsum dolor sit amet consectetur</p>
+                {error && (
+                    <div className="alert alert-danger text-center mb-3 w-50">
+                        {error}
+                    </div>
+                )}
                 <Form className={"d-flex flex-column gap-3 w-50"} onSubmit={handleSubmit}>
 
                     <Form.Group>
@@ -110,7 +115,6 @@ const LoginForm = () => {
                         onClick={()=> handleNavigation("/register")}
                     >Don’t have an account? Sign in</button>
                 </Form>
-
 
             </Col>
         </Container>

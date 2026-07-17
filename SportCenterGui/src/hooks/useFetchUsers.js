@@ -12,7 +12,7 @@ const useUsersFetch = (filterBy, sortBy, isAscending, userSportType, pageSize, c
                 sortBy,
                 isAscending,
                 userSportType,
-                includePhoto: false,
+                includePhoto: true,
             },
             { signal }
         );

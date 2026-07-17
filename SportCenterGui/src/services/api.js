@@ -123,7 +123,14 @@ export const trainerAPI = {
               : {}),
       };
 
-      return (await apiAuth.get('/trainer/getAll', { params, signal })).data;
+      const data = (await apiAuth.get('/trainer/getAll', { params, signal })).data;
+
+      return data.map(trainer => ({
+          ...trainer,
+          photo: trainer.photo
+              ? convertByteArrayToDataUrl(trainer.photo, 'image/jpeg')
+              : null
+      }));
   },
   getProfileDetails: async (trainerId, { signal } = {}) => {
     const sportTypeMap = {
@@ -138,6 +145,25 @@ export const trainerAPI = {
       avatarPhoto: convertByteArrayToDataUrl(data.avatarPhoto, data.avatarPhotoContentType || 'image/jpeg'),
       sportType: sportTypeMap[data.sportType] || data.sportType
     };
+  },
+  getTrainerId: async ({ signal } = {}) => {
+      return (await apiAuth.get('/trainer/my-id', { signal })).data;
+  },
+  getDescription: async (trainerId) => {
+    return (await apiAuth.get(`/trainer/${trainerId}/description`)).data;
+  },
+  updateDescription: async (trainerId, description) => {
+      return (
+          await apiAuth.post(
+              `/trainer/${trainerId}/description`,
+              JSON.stringify(description),
+              {
+                  headers: {
+                      "Content-Type": "application/json"
+                  }
+              }
+          )
+      ).data;
   },
   becomeTrainer: async ({ city, country, userSportType, trainerPhoto, avatarPhoto, coverPhoto }) => {
     const sportTypeMap = {
@@ -160,9 +186,6 @@ export const trainerAPI = {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
     ).data;
-  },
-  getTrainerId: async ({ signal } = {}) => {
-      return (await apiAuth.get('/trainer/my-id', { signal })).data;
   },
 };
 
