@@ -11,7 +11,7 @@ const TrainerTile = ({ user }) => {
         navigate(`/trainer/profile/${user.id}`);
     };
     return (
-        <Card className={"trainerTile bg-transparent border-0 "} style={{ cursor: "pointer" }} onClick={handleClick}>
+        <Card className={"trainerTile bg-transparent border-0 mb-4 "} style={{ cursor: "pointer" }} onClick={handleClick}>
             <Card.Img
                 src={user?.photo || KickboxingBg}
                 className={"h-100 object-fit-cover rounded-5"}

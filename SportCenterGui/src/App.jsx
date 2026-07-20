@@ -11,6 +11,7 @@ import RequestsPanel from "./Components/AdminPage/TrainerRequests/RequestsPanel/
 import { AuthProvider } from "./contexts/AuthContext.jsx";
 import TrainerProfilePage from './Components/TrainerPage/TrainerProfilePage/TrainerProfilePage.jsx';
 import AdminPanel from './Components/AdminPage/AdminPanel/AdminPanel.jsx';
+import AdminRanking from './Components/AdminPage/AdminRanking/AdminRanking.jsx';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
                         <Route index element={<Navigate to="users" replace />} />
                         <Route path="users" element={<AdminPanel />} />
                         <Route path="requests" element={<RequestsPanel />} />
+                        <Route path="ranking" element={<AdminRanking />} />
                     </Route>
                     <Route path="/trainer/profile/:id" element={<TrainerProfilePage/>}/>
 

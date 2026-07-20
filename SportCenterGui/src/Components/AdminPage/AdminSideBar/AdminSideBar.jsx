@@ -15,6 +15,9 @@ const AdminSideBar = () => {
                 <NavLink to="/admin/requests" className={({isActive}) => `adminNavLink ${isActive ? 'active' : ''}`}>
                     Trainer Requests
                 </NavLink>
+                <NavLink to="/admin/ranking" className={({isActive}) => `adminNavLink ${isActive ? 'active' : ''}`}>
+                    Ranking Calculation
+                </NavLink>
             </div>
         </div>
     )

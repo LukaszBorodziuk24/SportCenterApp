@@ -289,6 +289,7 @@ export const reviewAPI = {
 
 export const rankingAPI = {
   getRankings: async () => (await apiPublic.get('/ranking')).data,
+  calculateRankings: async () => (await apiAuth.post('/admin/trainer/ranking')).data,
 };
 
 export { apiAuth, apiPublic };

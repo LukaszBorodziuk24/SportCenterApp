@@ -71,11 +71,6 @@ const FilterPopup = ({sortBy, setSortBy, isAscending, setIsAscending}) => {
                             onChange={(e) => setSortBy(e.target.value)}
                         />
                     </Form.Group>
-
-
-                    <Button className={"filterButton pe-3 ps-3 pt-1 pb-1 mt-2"}>
-                        Accept
-                    </Button>
                 </Form>
             </div>
 

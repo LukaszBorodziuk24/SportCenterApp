@@ -108,9 +108,19 @@ const ReviewSection = ({ trainerId, isCurrentUser = false }) => {
         )}
 
         {!isAuthorized && !isCurrentUser && (
-          <Alert variant="info" className="mb-1">
-            Zaloguj się, aby dodać swoją opinię o tym trenerze
-          </Alert>
+        <div
+          className="mb-1 p-3 rounded-4 w-50"
+          style={{
+            border: "2px solid #14b8a6",
+            background: "transparent",
+            color: "#0f766e",
+            fontSize: "0.95rem",
+            fontWeight: "500",
+            textAlign: "center",
+          }}
+        >
+          Log in to add your review of this trainer.
+        </div>
         )}
 
         <div className="all-reviews-section flex-grow-1 d-flex flex-column">
