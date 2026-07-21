@@ -28,9 +28,12 @@ const BmiForm = ({handleSubmit,setBmiData,bmiData}) =>{
         <Form onSubmit={handleSubmit} className="d-flex justify-content-center h-100">
             <Row className={"w-60"}>
                 <div className={"d-flex flex-column justify-content-between"}>
-                    <Row className={"bmiTitle mt-3 text-center"}>
-                        <p className={"h2 mt-1"}> <GiWeightScale className={"h1 me-2"}/>BMI calculator</p>
-                    </Row>
+                <Row className={"mt-3 text-center"}>
+                    <p className={"expandedBmiTitle h2 mt-1"} style={{ color: "#65A4A0" }}>
+                        <GiWeightScale className={"h1 me-2"} />
+                        BMI calculator
+                    </p>
+                </Row>
 
                     <Row className={"justify-content-start align-items-center"}>
                         <p className={"genderText"}>Enter your gender</p>

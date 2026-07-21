@@ -50,7 +50,7 @@ const Tiles = () => {
                 <div className={"grid-item item3"} onClick={() => handleExpand('item3')}>
                     <SlotsTile />
                 </div>
-                <div className="grid-item item4" onClick={() => handleExpand('item4')}>
+                <div className={"grid-item item4"} onClick={() => handleExpand('item4')}>
                     <BmiTile/>
                 </div>
 

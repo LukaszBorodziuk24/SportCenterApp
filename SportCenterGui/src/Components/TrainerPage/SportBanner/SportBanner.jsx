@@ -1,24 +1,25 @@
 import "./SportBanner.css"
-import {Form, InputGroup} from "react-bootstrap";
-import {GiGymBag} from "react-icons/gi";
-import {IoFilter} from "react-icons/io5";
-import {SlMagnifier} from "react-icons/sl";
 import FilterPopup from "../FilterPopup/FilterPopup.jsx";
 import {useState} from "react";
 import SearchBar from "../../SharedComponents/SearchBar/SearchBar.jsx";
-import { Button } from "react-bootstrap";
 import { useAuth } from "../../../contexts/AuthContext.jsx";
 import BecomeTrainerModal from "../BecomeTrainerModal/BecomeTrainerModal.jsx";
 
+import SportTypePopup from "../SportTypePopup/SportTypePopup.jsx";
 
-const SportBanner = ({sport, setFilterBy, filterBy, sortBy, setSortBy, isAscending, setIsAscending}) => {
+const SportBanner = ({sport, setSport, setFilterBy, filterBy, sortBy, setSortBy, isAscending, setIsAscending}) => {
     const { isAuthorized } = useAuth();
     const [showModal, setShowModal] = useState(false);
+
+    
+
 
     return (
         <div className={"row pt-10 h-20 w-100 pb-3 mb-5 align-items-center"}>
             <div className={"col d-flex justify-content-start h-100"}>
-                <GiGymBag className={"sportIcon"}/>
+                <div >
+                    <SportTypePopup sport={sport} setSport={setSport}/>
+                </div>
                 {isAuthorized ? (
                     <button
                         className={"filterButton ms-3 pe-3 ps-3"}
@@ -38,6 +39,7 @@ const SportBanner = ({sport, setFilterBy, filterBy, sortBy, setSortBy, isAscendi
                 onClose={() => setShowModal(false)}
                 onSuccess={() => setShowModal(false)}
             />
+
         </div>
     )
 }

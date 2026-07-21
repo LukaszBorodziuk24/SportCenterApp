@@ -44,14 +44,21 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     try {
-      const data = await authAPI.login(credentials); // zwraca { token }
-      localStorage.setItem('jwt', data.token);
-      setJwt(data.token);
+      const result = await authAPI.login(credentials);
+
+      if (!result.success) {
+        return result;
+      }
+
+      localStorage.setItem('jwt', result.data.token);
+      setJwt(result.data.token);
+
       return { success: true };
+
     } catch (error) {
       return {
         success: false,
-        error: error.response?.data?.message || 'Login failed',
+        error: ['Login failed']
       };
     }
   };

@@ -19,10 +19,9 @@ const BmiTile = ({reloadOnClose}) => {
     const [hasBmi, setHasBmi] = useState(null);
 
     const props = useSpring({
-        backgroundSize: isHovered ? '120%' : '110%',
-        config: {tension: 280, friction: 60},
+        backgroundSize: isHovered ? '170%' : '150%',
+        config: { tension: 280, friction: 60 },
     });
-
     const handleMouseEnter = () => {
         setIsHovered(true);
 

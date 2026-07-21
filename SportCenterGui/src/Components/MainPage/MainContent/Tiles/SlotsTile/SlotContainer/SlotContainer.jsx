@@ -46,15 +46,15 @@ const SlotContainer = ({
                         <div className="d-flex justify-content-between align-items-center mb-3">
                             <div>
                                 <h5 className="mb-2">{formatDate(slot.startTime)}</h5>
-                                <p className="mb-1 d-flex align-items-center">
+                                <p 
+                                    className="mb-1 d-flex align-items-center"
+                                    style={{ fontSize: "1rem" }}
+                                >
                                     <FaClock className="me-2" />
                                     {formatTime(slot.startTime)} - {formatTime(slot.endTime)}
                                 </p>
-                                <p className="mb-1">
-                                    <strong>Duration:</strong> {slot.duration} minutes
-                                </p>
                                 {!isTrainerView && slot.trainerName && (
-                                    <p className="mb-2 d-flex align-items-center">
+                                    <p className="mb-2 d-flex align-items-center "style={{ fontSize: "1rem" }}>
                                         <FaUser className="me-2" />
                                         Trainer: 
                                         <span 
@@ -66,7 +66,7 @@ const SlotContainer = ({
                                     </p>
                                 )}
                                 {isTrainerView && slot.userName && (
-                                    <p className="mb-2 d-flex align-items-center">
+                                    <p className="mb-2 d-flex align-items-center "style={{ fontSize: "1rem" }}>
                                         <FaUser className="me-2" />
                                         Booked by: {slot.userName}
                                     </p>

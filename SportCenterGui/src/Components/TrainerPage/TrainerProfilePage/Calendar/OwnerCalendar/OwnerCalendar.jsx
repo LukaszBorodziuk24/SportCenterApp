@@ -86,11 +86,13 @@ const OwnerCalendar = ({ trainerId }) => {
   const handleSlotCreate = async (newSlot) => {
     try {
       const slotData = {
-        ownerId: trainerId,
-        startTime: newSlot.start,
-        endTime: newSlot.end,
-        description: newSlot.title
+          ownerId: trainerId,
+          startTime: new Date(newSlot.start).toISOString(),
+          endTime: new Date(newSlot.end).toISOString(),
+          description: newSlot.title
       };
+      console.log(slotData.startTime);
+      console.log(slotData.endTime);
 
       await calendarAPI.createTrainingSlot(slotData);
 

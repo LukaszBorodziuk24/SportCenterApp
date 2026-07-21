@@ -66,8 +66,8 @@ const UserSlotsTile = () => {
     if (error) return <div className="text-center mt-4 text-danger">{error}</div>;
 
     return (
-        <div className="userSlotsTile d-flex flex-column align-items-center justify-content-between h-100">
-            <div className="w-100 h-100">
+        <div className="userSlotsTile d-flex flex-column align-items-center justify-content-between h-100 p-2">
+            <div className="userSlotsWrapper">
                 <div className="d-flex justify-content-between align-items-center mb-4">
                     <h3 className="mt-4 mb-4">My Appointments</h3>
                 </div>

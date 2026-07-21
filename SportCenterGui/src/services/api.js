@@ -65,8 +65,40 @@ apiAuth.interceptors.request.use(
 );
 
 export const authAPI = {
-  register: async (data) => (await apiPublic.post('/auth/register', data)).data,
-  login: async (data) => (await apiPublic.post('/auth/login', data)).data,
+  register: async (data) => {
+    try {
+        const response = await apiPublic.post('/auth/register', data);
+
+        return {
+            success: true,
+            data: response.data
+        };
+    }
+    catch (error) {
+        return {
+            success: false,
+            error: error.response?.data?.details 
+                ?? [error.response?.data?.error ?? "Registration failed"]
+        };
+    }
+  },
+  login: async (data) => {
+    try {
+        const response = await apiPublic.post('/auth/login', data);
+
+        return {
+            success: true,
+            data: response.data
+        };
+    }
+    catch (error) {
+        return {
+            success: false,
+            error: error.response?.data?.details 
+    ?? [error.response?.data?.error ?? "Login failed"]
+        };
+    }
+  },
   getCurrentUser: async () => (await apiAuth.get('/auth/me')).data,
   getRole: async () => (await apiAuth.get('/auth/role')).data,
 };

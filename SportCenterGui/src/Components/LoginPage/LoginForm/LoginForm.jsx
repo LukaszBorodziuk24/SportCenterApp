@@ -62,8 +62,10 @@ const LoginForm = () => {
                 <p className={"h2"}>Welcome back</p>
                 <p className={""}>Lorem ipsum dolor sit amet consectetur</p>
                 {error && (
-                    <div className="alert alert-danger text-center mb-3 w-50">
-                        {error}
+                    <div className="bg-danger text-white rounded-3 text-center mb-3 w-50 p-3">
+                        {error.map((err, index) => (
+                            <p key={index}>{err}</p>
+                        ))}
                     </div>
                 )}
                 <Form className={"d-flex flex-column gap-3 w-50"} onSubmit={handleSubmit}>

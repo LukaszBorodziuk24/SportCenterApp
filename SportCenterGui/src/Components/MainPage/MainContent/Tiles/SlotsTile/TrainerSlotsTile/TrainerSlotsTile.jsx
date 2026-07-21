@@ -73,8 +73,8 @@ const TrainerSlotsTile = () => {
     if (error) return <div className="text-center mt-4 text-danger">{error}</div>;
 
     return (
-        <div className="trainerSlotsTile d-flex flex-column align-items-center justify-content-between h-100">
-            <div className="w-100 h-100">
+        <div className="trainerSlotsTile d-flex flex-column align-items-center justify-content-between h-100 p-2">
+            <div className="trainerSlotsWrapper">
                 <h3 className="mt-4 mb-4">My Training Slots</h3>
                 
                 <SlotContainer 

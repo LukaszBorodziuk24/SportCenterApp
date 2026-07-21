@@ -1,8 +1,10 @@
-.bmiCustom{
-    border-radius: 5vh;
+.bmiCustom {
+    border-radius: 2.5vh;
     background-image: url("../../../../../assets/BmiTileBg.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .bmiTitle{

@@ -9,7 +9,8 @@ import TrainerMainContent from "./TrainerMainContent/TrainerMainContent.jsx";
 import SportBanner from "./SportBanner/SportBanner.jsx";
 
 const TrainerPage = () => {
-    const {sport} = useParams();
+    const { sport: initialSport } = useParams();
+    const [sport, setSport] = useState(initialSport);
     const [filterBy, setFilterBy] = useState("");
     const [sortBy, setSortBy] = useState("name");
     const [isAscending, setIsAscending] = useState(false);
@@ -17,7 +18,7 @@ const TrainerPage = () => {
     return(
         <div className={"trainerCustom"} style={getTrainerBg(sport)}>
             <NavbarComp/>
-            <SportBanner sport={sport} setFilterBy={setFilterBy} filterBy={filterBy} sortBy={sortBy} setSortBy={setSortBy} isAscending={isAscending} setIsAscending={setIsAscending}/>
+            <SportBanner sport={sport} setSport={setSport} setFilterBy={setFilterBy} filterBy={filterBy} sortBy={sortBy} setSortBy={setSortBy} isAscending={isAscending} setIsAscending={setIsAscending}/>
             <TrainerMainContent userSportType={sport} filterBy={filterBy} sortBy={sortBy} isAscending={isAscending}/>
         </div>
     )

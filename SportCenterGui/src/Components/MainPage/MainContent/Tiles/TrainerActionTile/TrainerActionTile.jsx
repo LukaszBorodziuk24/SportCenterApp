@@ -18,17 +18,6 @@ const TrainerTile = () => {
     }, []);
     
 
-    //     {role === "Trainer" && (
-    //     <TrainerSlotsTile />
-    // )}
-
-    // {role === "User" && (
-    //     <UserSlotsTile />
-    // )}
-
-    // {(role === "Admin" || role === null) && (
-    //     <div>Admin placeholder</div>
-    // )}
     
     return (
         <div className="trainerActionTile d-flex flex-column align-items-center justify-content-between h-100">

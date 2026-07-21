@@ -68,23 +68,18 @@ const RegisterForm = () => {
             return;
         }
 
-        try {
-            await authAPI.register({
-                name: formData.firstName,
-                lastName: formData.lastName,
-                email: formData.email,
-                password: formData.password
-            });
-            console.log('Registration successful');
+        const result = await authAPI.register({
+            name: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            password: formData.password
+        });
+
+        if (result.success) {
+            console.log("Registration successful");
             handleNavigation("/login");
-        } catch (error) {
-            if (error.response && error.response.data) {
-                console.error('Registration failed:', error.response.data);
-                setRegisterError(error.response.data.message || 'Registration failed');
-            } else {
-                console.error('An error occurred:', error);
-                setRegisterError('Registration failed. Please try again.');
-            }
+        } else {
+            setRegisterError(result.error);
         }
     };
 
@@ -106,8 +101,13 @@ const RegisterForm = () => {
                 <p className={"h2"}>Create an account</p>
                 <p className={""}>Lorem Ipsum is simply dummy text of the printing and</p>
                 {registerError && (
-                    <div className="alert alert-danger text-center mb-3 w-50">
-                        {registerError}
+                    <div className="bg-danger text-white rounded-3 text-center mb-3 w-50 p-3">
+                        {Array.isArray(registerError)
+                            ? registerError.map((err, index) => (
+                                <p key={index}>{err}</p>
+                            ))
+                            : <p>{registerError}</p>
+                        }
                     </div>
                 )}
                 <Form className={"d-flex flex-column gap-3 w-50"} onSubmit={handleSubmit}>

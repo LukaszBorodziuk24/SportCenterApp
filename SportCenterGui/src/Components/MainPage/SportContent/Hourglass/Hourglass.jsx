@@ -9,7 +9,7 @@ const Hourglass = ({ isHovered, onMouseEnter, onMouseLeave, onNavigate }) => {
 
 
     const props = useSpring({
-        backgroundSize: isHovered ? '115%' : '100%',
+        backgroundSize: isHovered ? '170%' : '150%',
         config: { tension: 280, friction: 60 },
     });
 

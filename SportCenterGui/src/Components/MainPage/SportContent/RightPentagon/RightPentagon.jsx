@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom";
 const RightPentagon = ({isHovered, onMouseEnter, onMouseLeave, onNavigate}) => {
 
     const props = useSpring({
-        backgroundSize: isHovered ? '110%' : '100%',
+        backgroundSize: isHovered ? '170%' : '150%',
         config: {tension: 280, friction: 60},
     });
 
